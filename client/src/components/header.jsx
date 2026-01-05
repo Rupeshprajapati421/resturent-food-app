@@ -7,18 +7,21 @@ export default function Header() {
 		<header className="bg-white border-b sticky top-0 z-50">
 			<div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
 				<Link to="/" className="text-xl font-bold text-gray-900">
-					FoodApp
+					Foodie
 				</Link>
 
 				<nav className="hidden md:flex space-x-6 items-center" aria-label="Main navigation">
 					<Link to="/" className="text-gray-600 hover:text-gray-900">
 						Home
 					</Link>
-					<Link to="/foods" className="text-gray-600 hover:text-gray-900">
-						Foods
+					<Link to="/fooddetails" className="text-gray-600 hover:text-gray-900">
+						Fooddetails
 					</Link>
 					<Link to="/orders" className="text-gray-600 hover:text-gray-900">
 						Orders
+					</Link>
+					<Link to="/dashboard" className="text-gray-600 hover:text-gray-900">
+						Dashboard
 					</Link>
 				</nav>
 
