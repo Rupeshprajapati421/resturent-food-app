@@ -4,6 +4,7 @@ const cors=require("cors");
 const morgan=require("morgan");
 const dotenv=require("dotenv");
 const connectDb = require("./config/db");
+import Home from "./client/src/pages/Home";
 
 
 
@@ -39,7 +40,7 @@ const PORT=8080;
 app.get("/",(req,res)=>{
     return res
     .status(200)
-    .send("<h1> hello welcome to food server</h1>");
+    .send(Home);
 });
 
 console.log(process.env.PORT)
