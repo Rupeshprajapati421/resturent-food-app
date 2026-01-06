@@ -38,9 +38,7 @@ const PORT=8080;
  app.use('/api/v1/food',require('./routes/foodRoutes'))
 
 app.get("/",(req,res)=>{
-    return res
-    .status(200)
-    .send(Home);
+    return Home;
 });
 
 console.log(process.env.PORT)
